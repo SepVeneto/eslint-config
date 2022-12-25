@@ -1,0 +1,21 @@
+{
+  "name": "@sepveneto/eslint-config-vue",
+  "version": "0.1.0",
+  "description": "",
+  "author": "SepVeneto",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@sepveneto/eslint-config-basic": "workspace: *",
+    "@sepveneto/eslint-config-ts": "workspace: *",
+    "local-pkg": "^0.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}

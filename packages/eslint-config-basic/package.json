@@ -1,0 +1,13 @@
+{
+  "name": "@sepveneto/eslint-config-basic",
+  "version": "0.1.0",
+  "description": "",
+  "author": "SepVeneto",
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  }
+}
