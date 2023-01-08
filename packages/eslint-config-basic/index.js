@@ -9,9 +9,9 @@ module.exports = {
     './standard.js',
     'plugin:import/recommended',
     'plugin:eslint-comments/recommended',
-    'plugin:jsonc/recommended-with-jsonc',
-    'plugin:yml/standard',
-    'plugin:markdown/recommended'
+    // 'plugin:jsonc/recommended-with-jsonc',
+    // 'plugin:yml/standard',
+    // 'plugin:markdown/recommended'
   ],
   ignorePatterns: [
     '*.min.*',
@@ -26,12 +26,15 @@ module.exports = {
     '!.vitepress',
     '!.vscode',
   ],
-  // plugins: [
-  //   'html',
-  // ],
+  plugins: [
+    'html',
+  ],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
     }
   },
+  rules: {
+    'semi': ['error', 'always'],
+  }
 }

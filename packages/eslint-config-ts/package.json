@@ -8,9 +8,12 @@
     "eslint-config"
   ],
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
   },
   "dependencies": {
-    "@sepveneto/eslint-config-basic": "workspace: *"
+    "@sepveneto/eslint-config-basic": "workspace: *",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0"
   }
 }

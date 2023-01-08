@@ -1,7 +1,6 @@
 const { isPackageExists } = require('local-pkg')
 
 const TS = isPackageExists('typescript')
-
 if (!TS) {
   console.warn('[@sepveneto/eslint-config-vue] Typescript is not install, eslint js only')
 }
