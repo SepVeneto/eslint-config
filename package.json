@@ -1,15 +1,15 @@
 {
   "name": "eslint-config",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "packageManager": "pnpm@7.1.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && npm -r publish --access public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "SepVeneto",
+  "license": "MIT",
   "devDependencies": {
+    "bumpp": "^8.2.1",
     "eslint": "^8.29.0",
     "typescript": "^4.9.4"
   }
