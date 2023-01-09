@@ -9,9 +9,6 @@
     "eslint-config"
   ],
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
