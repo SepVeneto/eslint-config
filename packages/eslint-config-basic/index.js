@@ -37,5 +37,8 @@ module.exports = {
   rules: {
     'semi': ['error', 'always'],
     'comma-dangle': ['error', 'always-multiline'],
+    'camelcase': 'off',
+
+    'import/no-unresolved': 'off',
   }
 }

@@ -13,7 +13,10 @@ module.exports = {
       parserOptions: {
         parser: '@typescript-eslint/parser',
       },
-      rules: {},
+      rules: {
+        // https://github.com/vuejs/eslint-plugin-vue/issues/1625
+        'no-undef': 'off',
+      },
     }
   ],
   extends: [
@@ -22,5 +25,7 @@ module.exports = {
       ? '@sepveneto/eslint-config-ts'
       : '@sepveneto/eslint-config-basic'
   ],
-  rules: {},
+  rules: {
+    'vue/multi-word-component-names': 'off',
+  },
 }
