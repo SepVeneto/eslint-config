@@ -13,6 +13,7 @@
   "dependencies": {
     "@sepveneto/eslint-config-basic": "workspace: *",
     "@sepveneto/eslint-config-ts": "workspace: *",
+    "@speveneto/eslint-config-mp": "workspace: *",
     "eslint-plugin-vue": "^9.8.0",
     "local-pkg": "^0.4.2"
   },
