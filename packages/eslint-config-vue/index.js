@@ -1,15 +1,15 @@
 const { isPackageExists, getPackageInfoSync } = require('local-pkg')
 
-const vue = getPackageInfoSync('vue')
+const vue = getPackageInfoSync('vue', { paths: [process.cwd()] })
 const [, version] = vue.packageJson.version.match(/(\d+)\.(?:\d+)\.(?:.+)/) ?? []
 const isVue2 = version === '2'
 
-const TS = isPackageExists('typescript')
+const TS = isPackageExists('typescript', { paths: [process.cwd()] })
 if (!TS) {
   console.warn('[@sepveneto/eslint-config-vue] Typescript is not install, eslint js only')
 }
 
-const MP = isPackageExists('@dcloudio/uni-mp-weixin')
+const MP = isPackageExists('@dcloudio/uni-mp-weixin', { paths: [process.cwd()] })
 
 module.exports = {
   overrides: [
@@ -27,13 +27,13 @@ module.exports = {
   ],
   extends: [
     isVue2
-      ? 'plugin:vue/vue-recommended'
+      ? 'plugin:vue/recommended'
       : 'plugin:vue/vue3-recommended',
     TS
       ? '@sepveneto/eslint-config-ts'
       : '@sepveneto/eslint-config-basic',
     MP
-      ? 'sepveneto/eslint-config-mp'
+      ? '@sepveneto/eslint-config-mp'
       : ''
   ],
   rules: {

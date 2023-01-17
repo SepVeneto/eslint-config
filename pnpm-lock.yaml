@@ -58,6 +58,12 @@ importers:
     devDependencies:
       eslint: 8.30.0
 
+  packages/eslint-config-mp:
+    specifiers:
+      eslint: ^8.29.0
+    devDependencies:
+      eslint: 8.31.0
+
   packages/eslint-config-ts:
     specifiers:
       '@sepveneto/eslint-config-basic': 'workspace: *'
@@ -76,12 +82,14 @@ importers:
   packages/eslint-config-vue:
     specifiers:
       '@sepveneto/eslint-config-basic': 'workspace: *'
+      '@sepveneto/eslint-config-mp': 'workspace: *'
       '@sepveneto/eslint-config-ts': 'workspace: *'
       eslint: ^8.29.0
       eslint-plugin-vue: ^9.8.0
       local-pkg: ^0.4.2
     dependencies:
       '@sepveneto/eslint-config-basic': link:../eslint-config-basic
+      '@sepveneto/eslint-config-mp': link:../eslint-config-mp
       '@sepveneto/eslint-config-ts': link:../eslint-config-ts
       eslint-plugin-vue: 9.8.0_eslint@8.30.0
       local-pkg: 0.4.2
