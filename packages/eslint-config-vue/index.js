@@ -64,7 +64,7 @@ module.exports = {
     // 'vue/html-comment-content-newline': 'error',
 
     // extensions
-    'vue/max-len': 'warn',
+    // 'vue/max-len': 'warn',
     'vue/array-bracket-spacing': ['error', 'never'],
     'vue/arrow-spacing': ['error', { before: true, after: true }],
     'vue/block-spacing': ['error', 'always'],
