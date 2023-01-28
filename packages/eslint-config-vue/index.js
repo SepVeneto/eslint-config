@@ -57,12 +57,11 @@ module.exports = {
     'vue/html-comment-content-spacing': ['error', 'always', {
       exceptions: ['-'],
     }],
-    'vue/html-comment-content-newline': 'error',
     'vue/no-useless-v-bind': 'error',
     'vue/no-v-text-v-html-on-component': 'error',
     'vue/padding-line-between-blocks': ['error', 'always'],
     'vue/prefer-separate-static-class': 'error',
-    'vue/html-comment-content-newline': 'error',
+    // 'vue/html-comment-content-newline': 'error',
 
     // extensions
     'vue/max-len': 'warn',
