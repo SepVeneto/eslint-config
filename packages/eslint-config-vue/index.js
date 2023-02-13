@@ -1,7 +1,7 @@
 const { isPackageExists, getPackageInfoSync } = require('local-pkg')
 
 const vue = getPackageInfoSync('vue')
-const [, version] = vue.packageJson.version.match(/(\d+)\.(?:\d+)\.(?:.+)/) ?? []
+const [, version] = vue?.packageJson.version.match(/(\d+)\.(?:\d+)\.(?:.+)/) ?? []
 const isVue2 = version === '2'
 
 const TS = isPackageExists('typescript')
