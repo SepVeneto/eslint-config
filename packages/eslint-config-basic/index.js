@@ -35,10 +35,21 @@ module.exports = {
     }
   },
   rules: {
-    'semi': ['error', 'always'],
+    'semi': ['error', 'never'],
     'comma-dangle': ['error', 'always-multiline'],
     'camelcase': 'off',
 
     'import/no-unresolved': 'off',
+
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+        allowSeparatedGroups: false,
+      },
+    ],
   }
 }
