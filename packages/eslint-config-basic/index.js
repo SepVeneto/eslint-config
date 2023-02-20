@@ -38,6 +38,7 @@ module.exports = {
     'semi': ['error', 'never'],
     'comma-dangle': ['error', 'always-multiline'],
     'camelcase': 'off',
+    'space-before-function-paren': 'off',
 
     'import/no-unresolved': 'off',
 
