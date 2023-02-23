@@ -2,7 +2,7 @@ name: Release
 
 on:
   workflow_run:
-    workflows: ['Publich to NPM']
+    workflows: ['Publish to NPM']
     types: [completed]
 
 jobs:
