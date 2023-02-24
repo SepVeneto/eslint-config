@@ -1,9 +1,5 @@
 #!/bin/bash
 
-cd packages
-for pkg in ./*
-do
-cd ${pkg}
-pnpm publish --no-git-checks --access public
-cd -
-done
+pnpm i --frozen-lockfile --registry=https://registry.npmmirror.com
+
+pnpm -r publish --no-git-checks --access public
