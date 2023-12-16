@@ -53,7 +53,7 @@ module.exports = {
      * https://vuejs.org/style-guide/rules-strongly-recommended.html#component-name-casing-in-templates
      */
     'vue/component-options-name-casing': ['error', 'PascalCase'],
-    'vue/custom-event-name-casing': ['error', isVue2 ? 'camelCase' | 'ebab-case' : 'camelCase'],
+    'vue/custom-event-name-casing': ['error', isVue2 ? 'kebab-case' : 'camelCase'],
     'vue/html-comment-content-spacing': ['error', 'always', {
       exceptions: ['-'],
     }],
