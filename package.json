@@ -8,6 +8,9 @@
   },
   "author": "SepVeneto",
   "license": "MIT",
+  "peerDependencies": {
+    "eslint": "< 9.0.0"
+  },
   "devDependencies": {
     "bumpp": "^8.2.1",
     "eslint": "^8.29.0",
